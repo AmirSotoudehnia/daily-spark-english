@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daily Spark</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <span class="app-title">✨ Daily Spark</span>
+      <span class="date" id="date"></span>
+    </div>
+
+    <section class="card quote-card">
+      <div class="section-label">Quote of the Day</div>
+      <p class="quote-text" id="quote-text">Loading…</p>
+      <p class="quote-author" id="quote-author"></p>
+    </section>
+
+    <section class="card weather-card">
+      <div class="section-label">🌤 Weather</div>
+      <div class="weather-body" id="weather-body">
+        <div class="loading-dots"><span></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <section class="card news-card">
+      <div class="section-label">📰 Top News (Hacker News)</div>
+      <ul class="news-list" id="news-list">
+        <div class="loading-dots"><span></span><span></span><span></span></div>
+      </ul>
+    </section>
+
+  </div>
+  <script src="quotes.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
